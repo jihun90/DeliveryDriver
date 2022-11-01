@@ -13,7 +13,7 @@ public class Delivery : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.tag == "Package")
+        if ((other.tag == "Package") && !hasPackage)
         {
             Debug.Log("Package!!!");
             hasPackage = true;
